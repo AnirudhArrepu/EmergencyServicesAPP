@@ -1,4 +1,5 @@
 import 'package:emergencyservices/pages/bloodbank/blood_bank_home.dart';
+import 'package:emergencyservices/pages/emergency/emergency_home.dart';
 import 'package:emergencyservices/pages/foodbank/food_bank_home.dart';
 import 'package:emergencyservices/pages/home_page.dart';
 import 'package:emergencyservices/theme/light_mode.dart';
@@ -22,8 +23,9 @@ class EmergencyServices extends StatelessWidget {
       initialRoute: '/home',
       routes: {
         '/home' : (context) => const HomePage(),
-        '/bloodbank' : (context) => BloodBankHome(),
+        '/bloodbank' : (context) => const BloodBankHome(),
         '/foodbank' : (context) => const FoodBankHome(),
+        '/emergency' : (context) => const EmergencyHome(),
       },
     );
   }

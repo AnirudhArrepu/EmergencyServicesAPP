@@ -10,6 +10,11 @@ class BloodBankHome extends StatelessWidget {
         title: Text('Blood Bank'),
         centerTitle: true,
       ),
+      body: GestureDetector(
+        onDoubleTap: () {
+          Navigator.pushNamed(context, '/emergency');
+        },
+      ),
     );
   }
 }

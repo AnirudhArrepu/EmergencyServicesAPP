@@ -10,6 +10,11 @@ class FoodBankHome extends StatelessWidget {
         title: Text('Food Bank'),
         centerTitle: true,
       ),
+      body: GestureDetector(
+        onDoubleTap: () {
+          Navigator.pushNamed(context, '/emergency');
+        },
+      ),
     );
   }
 }

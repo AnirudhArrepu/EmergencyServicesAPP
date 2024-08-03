@@ -10,6 +10,11 @@ class HomePage extends StatelessWidget {
         title: const Text('Emergency Services'),
         centerTitle: true,
       ),
+      body: GestureDetector(
+        onDoubleTap: () {
+          Navigator.pushNamed(context, '/emergency');
+        },
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
