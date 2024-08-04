@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 
-class FoodBankHome extends StatelessWidget {
-  const FoodBankHome({super.key});
+class RequestPage extends StatelessWidget {
+  const RequestPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Food Bank'),
+        title: Text('Request Blood'),
         centerTitle: true,
       ),
       body: GestureDetector(
-        onDoubleTap: () {
+        onTap: () {
           Navigator.pushNamed(context, '/emergency');
         },
+        child: const Column(),
       ),
     );
   }

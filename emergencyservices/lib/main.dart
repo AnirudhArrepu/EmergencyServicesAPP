@@ -1,4 +1,6 @@
+import 'package:emergencyservices/pages/bloodbank/add_donor_page.dart';
 import 'package:emergencyservices/pages/bloodbank/blood_bank_home.dart';
+import 'package:emergencyservices/pages/bloodbank/request_page.dart';
 import 'package:emergencyservices/pages/emergency/emergency_home.dart';
 import 'package:emergencyservices/pages/foodbank/food_bank_home.dart';
 import 'package:emergencyservices/pages/home_page.dart';
@@ -26,6 +28,8 @@ class EmergencyServices extends StatelessWidget {
         '/bloodbank' : (context) => const BloodBankHome(),
         '/foodbank' : (context) => const FoodBankHome(),
         '/emergency' : (context) => const EmergencyHome(),
+        '/bloodbank/request' : (context) => const RequestPage(),
+        '/bloodbank/adddonor' : (context) => const AddDonorPage(),
       },
     );
   }
